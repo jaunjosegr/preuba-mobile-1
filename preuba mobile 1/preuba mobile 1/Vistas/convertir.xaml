@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="preuba_mobile_1.Vistas.convertir"
+             NavigationPage.HasNavigationBar="False">
+             
+    <Grid BackgroundColor="#FDE07F">
+        <StackLayout VerticalOptions="Center"
+                     Margin="25">
+            <Image  Source="planeta.png" 
+                    Margin="15"/>
+            <Frame HasShadow="False"
+                   CornerRadius="18">
+                <Entry Keyboard="Numeric"
+                       Placeholder="centimetros (cm)"
+                       TextColor="RosyBrown"
+                       PlaceholderColor="DarkCyan"
+                       FontSize="Large"
+                       x:Name="txtcm"/>
+            </Frame>
+            <Button  Text="Cálcular"
+                     CornerRadius="18"
+                     FontAttributes="Bold"
+                     FontSize="Large"
+                     Margin="0,15,0,0"
+                     TextTransform="None"
+                     BackgroundColor="#6E47D3"
+                     TextColor="White"
+                     x:Name="btncal"
+                     Clicked="btncal_Clicked"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Resultado:"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                <Label Text="0,00"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       x:Name="resul"/>
+            </StackLayout>
+            <Button Text="volver"
+                    TextTransform="None"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    HorizontalOptions="Center"
+                    x:Name="btnvolver"
+                    Clicked="btnvolver_Clicked"/>
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>
+     
